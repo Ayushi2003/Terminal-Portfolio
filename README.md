@@ -11,7 +11,6 @@ My portfolio & blog website developed with Next.JS(SSG) and TypeScript. Tailwind
 
 **Frontend** - [NextJS](https://nextjs.org/), [React](https://reactjs.org/), [TypeScript](https://www.typescriptlang.org/)  
 **Styling** - [Tailwind CSS](https://tailwindcss.com/) 
-**State Management** - [ContextAPI](https://reactjs.org/docs/context.html)  
 **Deployment** - [Vercel](https://vercel.com/)
 
 Install dependencies
