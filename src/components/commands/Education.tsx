@@ -9,8 +9,8 @@ const Education: React.FC = () => (
         <div className="title" style={{ fontWeight: "bold", color: "#61afef", marginBottom: "6px" }}>
           {title}
         </div>
-        {/* Mapping each line to a list item creates clean line breaks and bullets */}
-        <ul style={{ listStyleType: "disc", paddingLeft: "20px", spaceY: "4px" }}>
+        {/* FIXED: Removed the invalid 'spaceY' property from the style object */}
+        <ul style={{ listStyleType: "disc", paddingLeft: "20px" }}>
           {desc.map((line, index) => (
             <li key={index} style={{ color: "#abb2bf", marginBottom: "4px" }}>
               {line}
