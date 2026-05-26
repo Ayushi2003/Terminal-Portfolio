@@ -3,13 +3,13 @@ import { Wrapper } from "../styles/Output.styled";
 
 const Education: React.FC = () => (
   <Wrapper data-testid="education">
-    <EduIntro>Here is my educational background!</EduIntro>
+    {/* CHANGED: Exact matching text phrasing from your request */}
+    <EduIntro>Highest Academic qualification and relevant coursework overview.</EduIntro>
     {eduBg.map(({ title, desc }) => (
       <EduList key={title}>
         <div className="title" style={{ fontWeight: "bold", color: "#61afef", marginBottom: "6px" }}>
           {title}
         </div>
-        {/* FIXED: Removed the invalid 'spaceY' property from the style object */}
         <ul style={{ listStyleType: "disc", paddingLeft: "20px" }}>
           {desc.map((line, index) => (
             <li key={index} style={{ color: "#abb2bf", marginBottom: "4px" }}>

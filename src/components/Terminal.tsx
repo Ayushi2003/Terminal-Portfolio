@@ -27,19 +27,19 @@ type Command = {
 }[];
 
 export const commands: Command = [
-  { cmd: "about", desc: "about Ayushi Bansal", tab: 8 },
-  { cmd: "clear", desc: "clear the terminal", tab: 8 },
-  { cmd: "echo", desc: "print out anything", tab: 9 },
-  { cmd: "highest-education", desc: "view highest education background", tab: 1 },
-  { cmd: "email", desc: "send an email to me", tab: 8 },
-  { cmd: "help", desc: "check available commands", tab: 9 },
-  { cmd: "history", desc: "view command history", tab: 6 },
-  { cmd: "projects", desc: "view projects that I've coded", tab: 5 },
-  { cmd: "pwd", desc: "print current working directory", tab: 10 },
-  { cmd: "socials", desc: "check out my social accounts", tab: 6 },
-  { cmd: "themes", desc: "check available themes", tab: 7 },
-  { cmd: "welcome", desc: "display hero section", tab: 6 },
-  { cmd: "whoami", desc: "about current user", tab: 7 },
+  { cmd: "about", desc: "Display biographical and professional background information", tab: 17 },
+  { cmd: "clear", desc: "Clear the terminal session output", tab: 17 },
+  { cmd: "echo", desc: "Print arguments to the standard output stream", tab: 18 },
+  { cmd: "email", desc: "Open the default mail client for contact", tab: 17 },
+  { cmd: "help", desc: "List all available terminal commands", tab: 18 },
+  { cmd: "highest-qualification", desc: "Display highest academic qualifications and coursework", tab: 1 },
+  { cmd: "history", desc: "Show previously executed command history", tab: 15 },
+  { cmd: "projects", desc: "List technical projects and builds", tab: 14 },
+  { cmd: "pwd", desc: "Print current working directory path", tab: 19 },
+  { cmd: "socials", desc: "List direct links to external professional and social networks", tab: 15 },
+  { cmd: "themes", desc: "List available terminal interface themes", tab: 16 },
+  { cmd: "welcome", desc: "Render terminal startup banner and system info", tab: 15 },
+  { cmd: "whoami", desc: "Display current shell user identity", tab: 16 },
 ];
 
 type Term = {
