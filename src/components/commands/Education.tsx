@@ -3,11 +3,20 @@ import { Wrapper } from "../styles/Output.styled";
 
 const Education: React.FC = () => (
   <Wrapper data-testid="education">
-    <EduIntro>Here is my education background!</EduIntro>
+    <EduIntro>Here is my educational background!</EduIntro>
     {eduBg.map(({ title, desc }) => (
       <EduList key={title}>
-        <div className="title">{title}</div>
-        <div className="desc">{desc}</div>
+        <div className="title" style={{ fontWeight: "bold", color: "#61afef", marginBottom: "6px" }}>
+          {title}
+        </div>
+        {/* Mapping each line to a list item creates clean line breaks and bullets */}
+        <ul style={{ listStyleType: "disc", paddingLeft: "20px", spaceY: "4px" }}>
+          {desc.map((line, index) => (
+            <li key={index} style={{ color: "#abb2bf", marginBottom: "4px" }}>
+              {line}
+            </li>
+          ))}
+        </ul>
       </EduList>
     ))}
   </Wrapper>
@@ -15,22 +24,13 @@ const Education: React.FC = () => (
 
 const eduBg = [
   {
-    title: "Bachelor's Degree",
+    title: "Highest Education — Bachelor's Degree",
     desc: [
-      'Name of the university: Chitkara University',
-      'Course name: Bachelor of Engineering in Computer Science',
-      'Year of passing: 2024',
-      'CGPA obtained: 9.75/10',
-      'Relevant subjects: Object-Oriented Programming (Java), Data Structures, Algorithms, Python, Full Stack Development, IoT, Cybersecurity, Artificial Intelligence, and Machine Learning.',
-    ]
-  },
-  {
-    title: "XII",
-    desc: [
-      'Name of the school: Sacred Heart Senior Secondary School',
-      'Name of the board: CBSE (Central Board of Secondary Education)',
-      'Percentage obtained: 73.2%',
-      'Relevant subjects: Mathematics, Physics, Chemistry, English, etc.',
+      "University: Chitkara University",
+      "Course Name: Bachelor of Engineering in Computer Science",
+      "Year of Passing: 2024",
+      "CGPA Obtained: 9.75/10",
+      "Relevant Subjects: Object-Oriented Programming (Java), Data Structures, Algorithms, Python, Full Stack Development, IoT, Cybersecurity, Artificial Intelligence, and Machine Learning.",
     ],
   },
 ];

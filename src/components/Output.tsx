@@ -36,7 +36,7 @@ const Output: React.FC<Props> = ({ index, cmd }) => {
           about: <About />,
           clear: <Clear />,
           echo: <Echo />,
-          education: <Education />,
+          "highest-education": <Education />,
           email: <Email />,
           help: <Help />,
           history: <History />,
